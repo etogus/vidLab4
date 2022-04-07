@@ -16,18 +16,6 @@ public class Note {
     String system;
     long createdTime;
 
-    public Note() {
-    }
-
-    public Note(String name, String company, String screen, String ram, String ssd, String system) {
-        this.name = name;
-        this.company = company;
-        this.screen = screen;
-        this.ram = ram;
-        this.ssd = ssd;
-        this.system = system;
-    }
-
     public int getId() {
         return id;
     }
@@ -90,5 +78,16 @@ public class Note {
 
     public void setCreatedTime(long createdTime) {
         this.createdTime = createdTime;
+    }
+
+    public Note() { }
+
+    public Note(String name, String company, String screen, String ram, String ssd, String system) {
+        this.name = name;
+        this.company = company;
+        this.screen = screen;
+        this.ram = ram;
+        this.ssd = ssd;
+        this.system = system;
     }
 }

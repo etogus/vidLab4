@@ -1,8 +1,12 @@
 package com.mamedovga.vidlab4;
 
-import io.realm.RealmObject;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-public class Mono extends RealmObject {
+@Entity(tableName = "note_table")
+public class Note {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
 
     String name;
     String company;
@@ -12,16 +16,24 @@ public class Mono extends RealmObject {
     String system;
     long createdTime;
 
-    public Mono() {
+    public Note() {
     }
 
-    public Mono(String name, String company, String screen, String ram, String ssd, String system) {
+    public Note(String name, String company, String screen, String ram, String ssd, String system) {
         this.name = name;
         this.company = company;
         this.screen = screen;
         this.ram = ram;
         this.ssd = ssd;
         this.system = system;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

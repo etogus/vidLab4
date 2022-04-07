@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Monoblocks</string>
+    <string name="add_new_mono">Добавить</string>
+    <string name="name">Название</string>
+    <string name="company">Компания</string>
+    <string name="screen">Экран</string>
+    <string name="ram">RAM</string>
+    <string name="ssd">SSD</string>
+    <string name="system">Операционная система</string>
+    <string name="save">Сохранить</string>
+    <string name="author">Мамедов Г.А. ИУ3-81Б</string>
+</resources>
